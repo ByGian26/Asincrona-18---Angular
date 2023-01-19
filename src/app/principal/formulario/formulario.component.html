@@ -1,0 +1,16 @@
+<h1 class="text-center fw-bold">Registrar Usuario</h1>
+<section class="container-sm">
+  <section class="form-group">
+    <form (ngSubmit)="onSubmit()">
+      <section class="m-2">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" [(ngModel)]="datos.name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" [(ngModel)]="datos.email" name="email">
+      </section>
+      <section class="m-2">
+        <input type="submit" value="Registrarse" class="btn btn-dark">
+      </section>
+    </form>
+  </section>
+</section>
